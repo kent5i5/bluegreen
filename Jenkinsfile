@@ -1,8 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage("Lint JAVA"){
-            stage(‘Lint HTML’) {
+        stage(‘Lint HTML’) {
             steps {
                 sh 'tidy -q -e *.html'
             }
